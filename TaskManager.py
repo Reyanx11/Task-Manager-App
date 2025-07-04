@@ -1,10 +1,12 @@
 from datetime import datetime
 
+
+# Task class for individual task
 class Task:
     def __init__(self,title,):
         self.title = title
         self.completed=False
-        self.created_at=datetime.now()
+        self.created_at=datetime.now()   #captures time when task is created
 
     def mark_completed(self):
         self.completed =True
@@ -13,6 +15,9 @@ class Task:
     def mark_incomplete(self):
         self.completed=False
         print(f"{self.title} marked as incomplete")
+
+
+# to toggle task (complete/incomplete)
 
     def toggle(self):
         if self.completed:
